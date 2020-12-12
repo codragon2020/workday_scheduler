@@ -1,6 +1,6 @@
 function testTime() {
     // Sets time1 to 9a
-    time1 = moment().startOf('day').add(8, "hours");
+    time1 = moment().startOf('day').add(9, "hours");
     console.log('this is time1 in test', time1);
     // Sets currentTime to the hour
     currentTime = currentTime.startOf("hour");
