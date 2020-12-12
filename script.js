@@ -1,23 +1,20 @@
-
 // Moment declaration for day and time is positioned in header
-// moment(Date);
 $("#currentDay").text(moment().format('DD MM YYYY hh:mm:ss'));
 
-// Moment Current time 
+// Moment.js Current time 
 var currentTime = moment();
 
-// Returns current time to the nearest hour - 12:30 becomes 12:00
+// Returns current time to the nearest hour - hh:mm becomes hh:00
 currentTime = currentTime.startOf("hour");
 
 // Calculates the start of day + 9 to return 9 am
 var beforeTime = moment().startOf('day').add(9, "hours");
 
 
-// Time blocks
+// Time blocks to populate index.html
 // 9 am 
 var time1 = beforeTime.add(0, "h");
 time1 = time1.format('hh:mm a');
-console.log('this is time1', time1)
 // Populates time formula into html
 $(".block1").text(time1);
 
@@ -69,6 +66,15 @@ time9 = time9.format('hh:mm a');
 // Populates time formula into html
 $(".block9").text(time9);
 
-
+// Call the testTime function from the test.js file
 testTime();
 
+// Event listener to save to localStorage
+// W3schools: The siblings() method returns all sibling elements of the selected element
+$(".saveBtn").click(function () {
+    var formValue = $(this).siblings(".form-control").val();
+    console.log("The save button worked");
+    var listItem = $(this).parent().data("hour");
+    // Using the save button adds the key(hour) and value(user input) to localStorage
+    localStorage.setItem(listItem, formValue);
+});
