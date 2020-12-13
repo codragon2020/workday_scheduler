@@ -65,3 +65,6 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+.input-group {
+  margin: 2px;
+}
