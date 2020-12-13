@@ -70,7 +70,7 @@ $(".block9").text(time9);
 testTime();
 
 // Loops through input area to get item from localStorage
-var hoursInPlanner = [9, 10, 11, 12, 1, 2, 3, 4, 5];
+var hoursInPlanner = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 // Loop through hours array
 for (var i = 0; i < hoursInPlanner.length; i++) {
     // Get value from each key
