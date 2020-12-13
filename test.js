@@ -1,3 +1,7 @@
+// This function is used to compare the current hour with the hours in the planner
+// If the current hour is before the planner hour, the planner hour will be green
+// If the current hour is the same, the planner hour will be red
+// If the current hour is after, the planner hour will be gray
 function testTime() {
     // Sets time1 to 9a
     time1 = moment().startOf('day').add(9, "hours");
