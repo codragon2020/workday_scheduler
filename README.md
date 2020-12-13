@@ -14,8 +14,6 @@ https://codragon2020.github.io/workday_scheduler/
 
 This site was made with:
 
-To build this app, I used html, css/bootstrap, JavaScript, and jQuery. 
-
 ![tech stack](./images/html-css-js.png)
 
 ## Screenshots
