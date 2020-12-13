@@ -69,6 +69,16 @@ $(".block9").text(time9);
 // Call the testTime function from the test.js file
 testTime();
 
+// Loops through input area to get item from localStorage
+var hoursInPlanner = [9, 10, 11, 12, 1, 2, 3, 4, 5];
+// Loop through hours array
+for (var i = 0; i < hoursInPlanner.length; i++) {
+    // Get value from each key
+    var dataHour = localStorage.getItem(hoursInPlanner[i]);
+    // Put value into the form
+    $(".form" + hoursInPlanner[i]).val(dataHour);
+}
+
 // Event listener to save to localStorage
 // W3schools: The siblings() method returns all sibling elements of the selected element
 $(".saveBtn").click(function () {
