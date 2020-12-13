@@ -66,5 +66,10 @@ textarea{
 }
 
 .input-group {
-  margin: 2px;
+  margin: 1px;
+}
+
+/* Styles for Save icon */
+.fa-save {
+  padding: 10px;
 }
