@@ -1,5 +1,5 @@
 // Moment declaration for day and time is positioned in header
-$("#currentDay").text(moment().format('DD MM YYYY hh:mm:ss'));
+$("#currentDay").text(moment().format('MM/DD/YYYY hh:mm:ss'));
 
 // Moment.js Current time 
 var currentTime = moment();
